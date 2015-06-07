@@ -1,0 +1,66 @@
+info:
+  # Blog Information
+  title:        "Matthew J. McCullough"
+  subtitle:     "Open source, distributed leadership, and SDLC business transformation"
+  cover_image:  jiveworld-matthew-on-stage.jpg
+  cover_image_caption: "Keynoting JiveWorld"
+  about_image:  jiveworld-presentation-on-computer.jpg
+  about_image_caption: "My about image"
+  logo:         logo.png
+
+  # Social links
+  # facebook:     sendtoinc
+  twitter:      matthewmccull
+  github:       matthewmccullough
+  gplus:        '116226152487195527531'
+  linkedin: matthewjmmccullough
+
+  # Comments
+  disqus:
+    # Eg. "exampleblog" Set to false to disable comments
+    shortname:  false
+
+  # Google Analytics tracking ID. Leave blank to disable tracking
+  google-analytics-id: 'UA-63835021-1'
+
+  # Sharing settings
+  sharing:
+    twitter:    true
+    facebook:   true
+    gplus:      true
+    hn:         false
+    reddit:     true
+
+  # Google Fonts
+  # eg. 'Droid+Sans:400,700|Droid+Serif:400,700'
+  # google_font: 'Droid+Sans:400,700'
+
+  # Setup your fonts, colors etc at _assets/stylesheets/main.scss
+
+# Root URL where the site will be published
+url:         http://matthewjmccullough.com
+
+# host 0.0.0.0 allows us to access site via sapphire.local or localhost or 127.0.0.1
+host: 0.0.0.0
+
+paginate:             10
+
+# safe mode must be disabled to use jekyll-assets.
+safe:               false
+
+#
+# jekyll-assets: see more at https://github.com/ixti/jekyll-assets
+#
+assets:
+  dirname: assets
+  baseurl: /assets/
+  sources:
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/images
+  js_compressor: uglifier
+  css_compressor: sass
+  cachebust: none
+  cache: false
+  gzip: [ text/css, application/javascript ]
+  debug: false

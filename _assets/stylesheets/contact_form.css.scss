@@ -1,0 +1,33 @@
+@import "globals.scss";
+
+form.contact {
+  width: 65%;
+  margin: 0 auto;
+
+  input, textarea {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+    -webkit-appearance: none;
+        
+    &:focus {
+      border-color: $accent;
+      background-color: #F8FCFE;
+    };
+  }
+    
+  input[type=submit] {
+    background-color: $accent;
+    color: #fff;
+    height: 50px;
+  }
+}
+
+// lighten color of placeholder text
+::-webkit-input-placeholder { color: #AAA; }
+::-moz-placeholder { color: darken(#AAA,20%); }   // Firefox placeholders render lighter for some reason
+:-ms-input-placeholder { color: #AAA !important; }

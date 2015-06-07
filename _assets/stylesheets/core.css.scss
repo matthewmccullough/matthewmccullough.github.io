@@ -1,0 +1,67 @@
+@import "globals.scss";
+
+// Use border-box sizing for everything.
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  max-height: 100%
+}
+
+body {
+  margin:0;
+  border:0;
+  font-family:$font;
+  color:$text;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizelegibility;
+  font-size: 18px;
+  line-height: 1.428571429;
+}
+
+img {
+  vertical-align: bottom;     // remove bottom padding from images
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $fontheadings;
+  font-weight: 600;
+  color: #263c4c;
+  line-height: 1.1;
+}
+
+h1 { font-size: 2.1em; margin: 0.5em 0 1em; }
+h2 { font-size: 1.5em; margin: 0.5em 0 1em; }
+h3 { font-size: 1.3em; margin: 0.5em 0 1.1em; }
+h4 { font-size: 1.2em; margin: 0.5em 0 1.2em; }
+
+a {
+  color:$accent;
+  text-decoration:none;
+    
+  &:hover {
+    color:darken($accent, 8%);
+    text-decoration:none;
+  }
+}
+
+iframe { border: none; }
+
+.muted {
+  color:$textmuted;
+}
+
+.smaller {
+  font-size: 70%;
+}
+

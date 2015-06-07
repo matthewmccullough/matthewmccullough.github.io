@@ -1,0 +1,44 @@
+---
+layout: base
+---
+<div class="blog-cover" style="background-image:url(/images/{{ site.info.cover_image }});"></div>
+
+<article>
+  <div class="container">
+    <section>
+      <h1>My thoughts on software development</h1>
+      <p>
+        I lead the Professional Services efforts at <a href="https://github.com/about/team">GitHub</a> as the <em>Director of Field Services</em> and I love to think and write about open source, evolution of the SDLC, and the future of distributed management.
+      </p>
+    </section>
+  </div>
+</article>
+
+<article>
+  <div class="container">
+    {% for post in paginator.posts %}
+    <section class="post_summary">
+      <h2 class="title"><a href="{{ post.url }}" rel="prefetch">{{ post.title }}</a></h2>
+      <p>{{ post.excerpt }}</p>
+      <div class="meta">
+        <address>{{ post.author.name }}</address> &mdash;
+        <time pubdate datetime="{{ post.date | date: "%Y-%d-%B" }}" title="{{ post.date | date: "%b %d, %Y" }}">{{ post.date | date: "%b %d, %Y" }}</time> &mdash;
+        {% include read_time_estimate.html content=post.content %}
+      </div>
+      <hr>
+    </section>
+    {% endfor %}
+    <section class='pagination'>
+      {% if paginator.next_page %}
+      <a href="/page{{ paginator.next_page }}" class="button outline older">‹ Older</a>
+      {% endif %}
+      {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}
+      <a href="/" class="button outline newer">Newer ›</a>
+      {% else %}
+      <a href="/page{{ paginator.previous_page }}" class="button outline newer">Newer ›</a>
+      {% endif %}
+      {% endif %}
+    </section>
+  </div>
+</article>
