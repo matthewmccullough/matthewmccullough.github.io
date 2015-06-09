@@ -45,22 +45,5 @@ host: 0.0.0.0
 
 paginate:             10
 
-# safe mode must be disabled to use jekyll-assets.
-safe:               false
-
-#
-# jekyll-assets: see more at https://github.com/ixti/jekyll-assets
-#
-assets:
-  dirname: assets
-  baseurl: /assets/
-  sources:
-    - _assets/javascripts
-    - _assets/stylesheets
-    - _assets/images
-  js_compressor: uglifier
-  css_compressor: sass
-  cachebust: none
-  cache: false
-  gzip: [ text/css, application/javascript ]
-  debug: false
+sass:
+  sass_dir: assets

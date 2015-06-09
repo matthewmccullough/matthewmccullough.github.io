@@ -6,8 +6,26 @@
   <title>{% if page.title %}{{ page.title }} &mdash; {{ site.info.title }}{% else %}{{ site.info.title }} &mdash; {{ site.info.subtitle }}{% endif %}</title>
   <!--[if lt IE 9]><script src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js'></script><![endif]-->
   {% if site.info.google_font %}<link href="https://fonts.googleapis.com/css?family={{ site.info.google_font }}" rel="stylesheet" type="text/css">{% endif %}
-  {% stylesheet app %}
-  {% include scripts.html %}
+
+  <link rel="stylesheet" href="/assets/normalize.css">
+  <link rel="stylesheet" href="/assets/core.css">
+  <link rel="stylesheet" href="/assets/buttons.css">
+  <link rel="stylesheet" href="/assets/icons.css">
+  <link rel="stylesheet" href="/assets/article.css">
+  <link rel="stylesheet" href="/assets/contact_form.css">
+  <link rel="stylesheet" href="/assets/syntax.css">
+  <link rel="stylesheet" href="/assets/google_map_container.css">
+  <link rel="stylesheet" href="/assets/cover.css">
+  <link rel="stylesheet" href="/assets/pagination.css">
+  <link rel="stylesheet" href="/assets/site_header.css">
+  <link rel="stylesheet" href="/assets/site_footer.css">
+  <link rel="stylesheet" href="/assets/responsive.css">
+  <link rel="stylesheet" href="/assets/app.css">
+
+  <script src="/assets/google_map_fix.js"></script>
+  <script src="/assets/zoomable_image.js"></script>
+  <script src="/assets/app.js"></script>
+
   <link rel="shortcut icon" href="/favicon.ico?v2" type="image/x-icon" />
   <link rel="alternate" type="application/atom+xml" title="{{ site.info.title }}" href="/atom.xml" />
   <meta name="title" content="{% if page.title %}{{ page.title }} {% else %}{{ site.info.title }}{% endif %}">

@@ -1,3 +1,6 @@
+---
+---
+
 @import "globals.scss";
 
 // Use border-box sizing for everything.
@@ -48,7 +51,7 @@ h4 { font-size: 1.2em; margin: 0.5em 0 1.2em; }
 a {
   color:$accent;
   text-decoration:none;
-    
+
   &:hover {
     color:darken($accent, 8%);
     text-decoration:none;
@@ -64,4 +67,3 @@ iframe { border: none; }
 .smaller {
   font-size: 70%;
 }
-
