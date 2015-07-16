@@ -5,9 +5,10 @@
 
 .site-header {
   background: #fff;
+  overflow: auto;
 
   nav {
-    padding: 22px 30px;
+    padding: 30px 10px;
 
     > a {
       color: #444;
@@ -24,8 +25,12 @@
     }
   }
 
+  .links {
+    float: left;
+  }
+
   .social {
-    float:right;
+    float: right;
 
     a:last-child {
       margin-right: 0;

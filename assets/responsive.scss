@@ -44,7 +44,7 @@
   }
 
   // reduce height of cover image
-  .blog-cover, .article-cover { height:200px; }
+  .blog-cover, .article-cover { display: none; }
 
   .blog-cover {
     .cover_overlay .content {
@@ -59,8 +59,8 @@
   // narrow nav spacing (blog & about links)
   .site-header {
     nav {
-      padding-left: 15px;
-      padding-right: 15px;
+      padding-left: 30px;
+      padding-right: 30px;
       > a { margin-right: 1em; }
     }
   }
@@ -89,6 +89,23 @@
 }
 
 @media (max-width: 400px) {
+  .brand{
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  .links {
+    text-align: center;
+    float: left;
+    width: 100%;
+  }
+
+  .social {
+    text-align: center;
+    float: left;
+    width: 100%;
+  }
 
   .blog-cover {
     // hide social icons
