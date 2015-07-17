@@ -2,11 +2,14 @@
 layout: base
 ---
 {% if page.cover_image %}
-<div class="article-cover" style="background-image:url(/images/{{ page.cover_image }})"></div>
+<div class="blog-cover">
+  <div class="article-cover" style="background-image:url(/images/{{ page.cover_image }})"></div>
+    {% if page.cover_image_caption %}
+    <div class='cover-caption'><a href='/about.html#pictures'>{{ page.cover_image_caption }}</a></div>
+    {% endif %}
+  </div>
 {% endif %}
-{% if page.cover_image_caption %}
-<div class='cover-caption'><a href='/about.html#pictures'>{{ page.cover_image_caption }}</a></div>
-{% endif %}
+
 
 <article {% if page.container_class %}class='{{ page.container_class }}'{% endif %}>
 
@@ -40,7 +43,7 @@ layout: base
         <p>{{ post.excerpt }}</p>
         <hr>
       </section>
-      {% endif %} 
+      {% endif %}
       {% if page.previous.url %}
       {% assign post = page.previous %}
       <section class="post_summary">
@@ -48,7 +51,7 @@ layout: base
         <p>{{ post.excerpt }}</p>
         <hr>
       </section>
-      {% endif %} 
+      {% endif %}
       {% if site.info.disqus.shortname %}
       <section>
         {% include disqus.html %}
