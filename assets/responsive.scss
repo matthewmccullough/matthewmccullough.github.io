@@ -43,9 +43,6 @@
     hr { margin: 1.5em 0; }
   }
 
-  // reduce height of cover image
-  .blog-cover, .article-cover { display: none; }
-
   .blog-cover {
     .cover_overlay .content {
       // reduce size of blog cover text
@@ -107,10 +104,7 @@
     width: 100%;
   }
 
-  .blog-cover {
-    // hide social icons
-    .cover_overlay .content a { display: none; }
-  }
+  .blog-cover { display: none; }
 
   article {
     // reduce margins so article is wider
