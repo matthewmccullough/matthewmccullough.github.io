@@ -9,8 +9,7 @@
 
 ## Thanks
 
-This blog was forked from https://github.com/kippt/jekyll-incorporated. Originally built for
-[sendtoinc.com](https://sendtoinc.com), your workspace for sharing and organizing knowledge.
+This blog was forked from https://github.com/kippt/jekyll-incorporated.
 Original template built by:
 
 **Karri Saarinen**
