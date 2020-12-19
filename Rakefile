@@ -33,3 +33,5 @@ namespace :site do
     end
   end
 end
+
+task :default => 'site:generate'
