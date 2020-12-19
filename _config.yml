@@ -43,7 +43,9 @@ url:         http://matthewjmccullough.com
 # host 0.0.0.0 allows us to access site via sapphire.local or localhost or 127.0.0.1
 host: 0.0.0.0
 
-paginate:             10
+paginate: 10
 
 sass:
   sass_dir: assets
+
+plugins: [jekyll-paginate]
